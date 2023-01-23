@@ -10,7 +10,7 @@ function Login({ onLogin }) {
 
   return (
   <>
-    <h1 className='log-in-title'>Gamepoll</h1>
+    <h1 className='log-in-title'>CalBearsFball</h1>
       {showLogin ? (
         <>
           <LoginForm onLogin={onLogin} />
@@ -33,15 +33,5 @@ function Login({ onLogin }) {
     
   );
 }
-
-
-
-
-// const Divider = styled.hr`
-//   border: none;
-//   border-bottom: 1px solid #ccc;
-//   margin: 16px 0;
-// `;
-
 
 export default Login;

@@ -4,7 +4,6 @@ import React,{ useState } from "react";
 function Create ({ onLogin }) {
 const [username,setUsername] = useState("");
 const [password,setPassword]=useState("");
-// console.log("hello from create");
 
 function handleSubmit(e) {
   e.preventDefault();

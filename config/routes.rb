@@ -19,18 +19,11 @@ Rails.application.routes.draw do
 
   delete "/logout", to: "sessions#destroy"
 
-  get "/games", to: "game_images#index"
+  get "/questions", to: "questions#index"
 
-  post "/gamespost", to: "game_images#create"
+  post "/commentspost", to: "comments#create"
 
- delete "/game_images/:id", to: "game_images#destroy"
-
- patch "/game_images/:id", to: "game_images#update"
-
-
- post "ratings", to: "ratings#create"
-
- get "rating", to: "ratings#index"
+ delete "/comments/:id", to: "commentss#destroy"
 
 #  delete '/photos/:id', to: 'photos#destroy', as: 'delete_photo'
 end

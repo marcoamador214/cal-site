@@ -5,23 +5,32 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-GameImage.destroy_all
 User.destroy_all
-Rating.destroy_all
+Question.destroy_all
+Comment.destroy_all
 
-a=GameImage.create(name:"CATAN", image:"https://target.scene7.com/is/image/Target/GUEST_4a6c6a4b-4279-4520-9c7d-2e5036b525a4?wid=633&hei=633&qlt=80&fmt=webp:")
-b=GameImage.create(name:"MONOPOLY", image:"https://i5.walmartimages.com/asr/e9009e67-fbb0-4e96-83c5-5af0eeb13b28_1.f17117ff29f8aa4992cb93bad9205dc4.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF")
-c=GameImage.create(name:"LIFE", image:"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/91FnnNUmEgL._AC_SX679_.jpg")
-d=GameImage.create(name:"RISK", image:"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/91jsvpbPP3L.__AC_SX300_SY300_QL70_FMwebp_.jpg")
-e=GameImage.create(name:"SORRY", image: "https://2.bp.blogspot.com/-NfpkXADjUxo/WkZ-B9b4-sI/AAAAAAAAbGI/Hr9syBXRsbgcSdm808H83u6AwBe0YIAAQCLcBGAs/s320/ef029d707cca2a520338acf2f564cbb8.jpg")
+# Users
 
+marco = User.create(username: 'Marco', password: '123')
+annie = User.create(username: 'Annie', password: '456')
+gb = User.create(username: 'GoBears', password: '789')
 
+# Questions
 
-one=User.create(username:"Nikan",password:"123")
-two=User.create(username:"Aidan",password:"456")
-the=User.create(username:"Marco",password:"789")
+q1 = Question.create(image:'https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk1MDk1MDA1Njk2NjMyNTQ2/sam-jackson-v---mark-rebilias-2.jpg', body: 'Who should start for Cal at QB this season, and why?')
+q2 = Question.create(image:'https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk1MDk1MDA1Njk2NjMyNTQ2/sam-jackson-v---mark-rebilias-2.jpg', body: "Who do you think will be Cal's best WR next season?")
+q3 = Question.create(image:'https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk1MDk1MDA1Njk2NjMyNTQ2/sam-jackson-v---mark-rebilias-2.jpg', body: 'Which 2023 opponent are you most looking forward to playing?')
 
+# Comments
 
-Rating.create(id:1,game_rating:4,user_id: one.id, game_image_id: a.id)
-Rating.create(id:2,game_rating:6,user_id: two.id, game_image_id: b.id)
-Rating.create(id:3, game_rating:8,user_id:the.id, game_image_id: c.id)
+Comment.create(body: "I'm rolling with Sam Jackson, he's more electric than anyone we have on the roster!", user_id: annie.id, question_id: q1.id)
+Comment.create(body: "Sam Jackson 100%, he's got so much ability, I'd keep an eye on Fernando Mendoza too though.", user_id: marco.id, question_id: q1.id)
+Comment.create(body: "Definitely Fernando Mendoza, he's worked his tail off and deserves a shot!", user_id: gb.id, question_id: q1.id)
+
+Comment.create(body: "It'll be Jeremiah Hunter, no doubt.", user_id: marco.id, question_id: q2.id)
+Comment.create(body: "Mavin Anderson", user_id: annie.id, question_id: q2.id)
+Comment.create(body: "Money Mave!", user_id: gb.id, question_id: q2.id)
+
+Comment.create(body: "USC, can't wait for that one", user_id: gb.id, question_id: q3.id)
+Comment.create(body: "Auburn for SURE, bring them here ASAP", user_id: marco.id, question_id: q3.id)
+Comment.create(body: "UCLA", user_id: annie.id, question_id: q3.id)

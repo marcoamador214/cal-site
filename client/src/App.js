@@ -5,15 +5,15 @@ import './App.css'
 
 import NavBar from './NavBar';
 import Login from './Login';
-import Loggedin from "./Loggedin";
-import Test from './Test.js';
-import Game from './Game.js';
+import Header from "./Header";
+import Gallery from "./Gallery";
+import Intro from "./Intro";
+import Awards from "./Awards";
 import RatedGames from './RatedGames.js';
 
 
 function App() {
  const [currentUser,setCurrentUser]=useState("");
- const [ratings,setRatings] =useState([])
 
 
  useEffect(()=> { 
@@ -27,38 +27,27 @@ function App() {
  if(!currentUser) {
  
   return <Login onLogin ={setCurrentUser}/>}
- 
-
-
-
-//  useEffect(() =>
-//  {
-//   fetch('/auth')
-//   .then(res=>{
-//     if(res.ok){
-//       res.json().then(user=>setCurrentUser(user))
-//   }
-//  })
-//  },[])
 
 
   return (
     
-     <div className="App">
+    <div className="App">
       <Switch>
         <Route exact path="/" >
-      <NavBar currentUser={currentUser} setCurrentUser={setCurrentUser} />
-    
-      <Game currentUser={currentUser} setCurrentUser={setCurrentUser}  ratings={ratings} setRatings={setRatings}/>
-      </Route>
+          <NavBar currentUser={currentUser} setCurrentUser={setCurrentUser} />
+          <Header/>
+          <Gallery/>
+          <Intro/>
+          <Awards/>
+        </Route>
         
-       <Route path ="/RatedGames">    
-       <NavBar currentUser={currentUser} setCurrentUser={setCurrentUser}  />
-        <RatedGames currentUser={currentUser}/>
-      </Route>
-  
-        </Switch>
-        </div>
+        <Route path ="/RatedGames">    
+          <NavBar currentUser={currentUser} setCurrentUser={setCurrentUser}  />
+          <RatedGames currentUser={currentUser}/>
+        </Route>
+
+      </Switch>
+    </div>
       
        
    
