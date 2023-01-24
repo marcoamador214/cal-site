@@ -163,3 +163,12 @@
     line-height: 70px;
   }
 }
+
+.welcome {
+  text-align: center;
+  background-color: var(--color-black);
+  color: var(--color-golden);
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-bottom: none;
+}

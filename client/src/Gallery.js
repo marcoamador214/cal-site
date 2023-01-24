@@ -25,7 +25,7 @@ const scroll = (direction) => {
     <div className='app__gallery flex__center'>
       <div className='app__gallery-content'>
         <SubHeading title='@calbearsfball'/>
-        <h1 className='headtext__cormorant'>Latest IG Posts</h1>
+        <h1 className='headtext__cormorant'>Latest IG Posts 📲</h1>
         <p className='p__opensans' style={{ color: '#AAA', marginTop: '2rem'}}>Go Bears!</p>
         <button type='button' className='custom__button'>View More</button>
       </div>

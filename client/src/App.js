@@ -37,7 +37,7 @@ function App() {
       <Switch>
         <Route exact path="/" >
           <NavBar currentUser={currentUser} setCurrentUser={setCurrentUser} />
-          <Header/>
+          <Header currentUser={currentUser}/>
           <Gallery/>
           <Intro/>
           <Awards/>
