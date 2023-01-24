@@ -9,7 +9,9 @@ import Header from "./Header";
 import Gallery from "./Gallery";
 import Intro from "./Intro";
 import Awards from "./Awards";
-import RatedGames from './RatedGames.js';
+import Roster from './Roster';
+import Questions from './Questions';
+import Schedule from './Schedule';
 
 
 function App() {
@@ -41,9 +43,19 @@ function App() {
           <Awards/>
         </Route>
         
-        <Route path ="/RatedGames">    
+        <Route path ="/Roster">    
           <NavBar currentUser={currentUser} setCurrentUser={setCurrentUser}  />
-          <RatedGames currentUser={currentUser}/>
+          <Roster/>
+        </Route>
+
+        <Route exact path='/Questions'>
+          <NavBar currentUser={currentUser} setCurrentUser={setCurrentUser}/>
+          <Questions/>
+        </Route>
+
+        <Route exact path='/Schedule'>
+          <NavBar currentUser={currentUser} setCurrentUser={setCurrentUser}/>
+          <Schedule/>
         </Route>
 
       </Switch>
