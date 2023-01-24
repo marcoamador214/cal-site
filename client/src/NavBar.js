@@ -22,10 +22,18 @@ function NavBar ({currentUser,setCurrentUser}){
             </a>
           </div>
           <ul className='navbar_links'>
-            <li className='p__opensans'>Home</li>
-            <li className='p__opensans'>Roster</li>
-            <li className='p__opensans'>Schedule</li>
-            <li className='p__opensans'>Questions</li>
+            <li className='p__opensans'>
+              <Link exact to='/'>Home</Link>
+            </li>
+            <li className='p__opensans'>
+              <Link exact to='/Roster'>Roster</Link>
+            </li>
+            <li className='p__opensans'>
+              <Link exact to='/Schedule'>Schedule</Link>
+            </li>
+            <li className='p__opensans'>
+              <Link exact to='/Questions'>Q&A</Link>
+            </li>
           </ul>
           <div className='navbar_login'>
             <a className='p__opensans' style = {{ cursor: 'pointer' }} onClick={handleLogOutClick}>Log Out</a>
