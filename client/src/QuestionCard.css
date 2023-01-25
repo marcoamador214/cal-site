@@ -1,0 +1,9 @@
+.question-form {
+    text-align: center;
+    background-color: var(--color-black);
+}
+
+.question-form img {
+    border: 2px solid var(--color-golden);
+    max-width: 400px;
+}

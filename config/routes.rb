@@ -21,9 +21,13 @@ Rails.application.routes.draw do
 
   get "/questions", to: "questions#index"
 
-  post "/commentspost", to: "comments#create"
+  post "/comments", to: "comments#create"
 
- delete "/comments/:id", to: "commentss#destroy"
+ delete "/comments/:id", to: "comments#destroy"
+
+ get '/comments', to: 'comments#index'
+
+ get '/users', to: 'users#index'
 
 #  delete '/photos/:id', to: 'photos#destroy', as: 'delete_photo'
 end

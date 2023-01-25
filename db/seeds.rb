@@ -18,8 +18,8 @@ gb = User.create(username: 'GoBears', password: '789')
 # Questions
 
 q1 = Question.create(image:'https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk1MDk1MDA1Njk2NjMyNTQ2/sam-jackson-v---mark-rebilias-2.jpg', body: 'Who should start for Cal at QB this season, and why?')
-q2 = Question.create(image:'https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk1MDk1MDA1Njk2NjMyNTQ2/sam-jackson-v---mark-rebilias-2.jpg', body: "Who do you think will be Cal's best WR next season?")
-q3 = Question.create(image:'https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk1MDk1MDA1Njk2NjMyNTQ2/sam-jackson-v---mark-rebilias-2.jpg', body: 'Which 2023 opponent are you most looking forward to playing?')
+q2 = Question.create(image:'https://www.si.com/.image/t_share/MTc5Nzg0MDEwNDYzOTc4Nzc2/jeremiah-hunter-10_cal_fbc_20210319_102217_ads.jpg', body: "Who do you think will be Cal's best WR next season?")
+q3 = Question.create(image:'https://ca-times.brightspotcdn.com/dims4/default/5a732f6/2147483647/strip/true/crop/2738x1540+975+407/resize/1200x675!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fd0%2Fde%2F08b7df9a4b658082666047102152%2F1209485-sp-usc-california-7-gmf.jpg', body: 'Which 2023 opponent are you most looking forward to playing?')
 
 # Comments
 

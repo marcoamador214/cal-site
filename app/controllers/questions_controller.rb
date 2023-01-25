@@ -1,4 +1,4 @@
-class RatingsController < ApplicationController
+class QuestionsController < ApplicationController
 
     def index
         questions = Question.all

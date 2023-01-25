@@ -16,14 +16,28 @@ import Schedule from './Schedule';
 
 function App() {
  const [currentUser,setCurrentUser]=useState("");
+ const [users, setUsers] = useState([]);
+
+ useEffect(() => {
+
+    fetch('/users')
+    .then((r) => r.json())
+    .then((users) => {
+      setUsers(users)
+      console.log(users)
+    })
+
+},[]);
 
 
  useEffect(()=> { 
+
   fetch("/me").then((r)=> {
     if(r.ok){
       r.json().then((user)=>setCurrentUser(user));
     }
   });
+
  },[]);
 
  if(!currentUser) {
@@ -50,7 +64,7 @@ function App() {
 
         <Route exact path='/Questions'>
           <NavBar currentUser={currentUser} setCurrentUser={setCurrentUser}/>
-          <Questions/>
+          <Questions currentUser={currentUser} users={users}/>
         </Route>
 
         <Route exact path='/Schedule'>
