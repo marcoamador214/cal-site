@@ -1,6 +1,8 @@
+import './Roster.css'
+
 function Roster() {
     return (
-        <div>
+        <div className="roster">
             Roster Boiii
         </div>
     )

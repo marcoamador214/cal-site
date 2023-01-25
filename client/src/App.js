@@ -11,7 +11,7 @@ import Intro from "./Intro";
 import Awards from "./Awards";
 import Roster from './Roster';
 import Questions from './Questions';
-import Schedule from './Schedule';
+import Opponents from "./Opponents";
 
 
 function App() {
@@ -69,7 +69,7 @@ function App() {
 
         <Route exact path='/Schedule'>
           <NavBar currentUser={currentUser} setCurrentUser={setCurrentUser}/>
-          <Schedule/>
+          <Opponents/>
         </Route>
 
       </Switch>
