@@ -108,7 +108,8 @@ const offense = [
       "position": "QB",
       "Hometown": "Chicago, IL",
       "Class": "RS Sophomore",
-      image: 'https://d195hqvwre713v.cloudfront.net/images/2023/1/10/tcu_jackson_sam.jpg?width=300'
+      image: 'https://d195hqvwre713v.cloudfront.net/images/2023/1/10/tcu_jackson_sam.jpg?width=300',
+      post: 'https://www.instagram.com/p/CnVgvdVrpyp/?hl=en'
   },
   {
       "id": 2,
@@ -126,7 +127,8 @@ const offense = [
       "position": "RB",
       "Hometown": "Norco, CA",
       "Class": "Sophomore",
-      image: 'https://d195hqvwre713v.cloudfront.net/images/2022/7/21/480x600_Jaydn_Ott_6__Cal_FBC_20220623_144116_Al_Sermeno_429.jpg?width=300'
+      image: 'https://d195hqvwre713v.cloudfront.net/images/2022/7/21/480x600_Jaydn_Ott_6__Cal_FBC_20220623_144116_Al_Sermeno_429.jpg?width=300',
+      post: 'https://www.instagram.com/p/Cmj2H-qy-Y0/?hl=en'
   },
   {
       "id": 6,
@@ -171,7 +173,8 @@ const offense = [
       "position": "WR",
       "Hometown": "Los Angeles, CA",
       "Class": "RS Senior",
-      image: 'https://d195hqvwre713v.cloudfront.net/images/2023/1/10/illinois_hightower_brian_2921.jpg?width=300'
+      image: 'https://d195hqvwre713v.cloudfront.net/images/2023/1/10/illinois_hightower_brian_2921.jpg?width=300',
+      post: 'https://www.instagram.com/p/CnYFmFruryF/?hl=en'
   },
   {
       "id": 11,

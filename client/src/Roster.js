@@ -6,7 +6,9 @@ function OffenseCard({ offense }) {
             <div className='card-container'>
                 <div className='card'>
                     <div>
+                        <a href={offense.post}>
                         <img src={offense.image} alt={offense.name} className='image-container'/>
+                        </a>
                     </div>
                     <div className='card-content'>
                         <div className='card-title'>
