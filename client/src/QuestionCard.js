@@ -54,24 +54,27 @@ function QuestionCard({ question, questions, currentUser, users, setQuestions })
 
     const mappedComments = question.comments.map((comment) => {
         return (
-                <li style={{ color: 'var(--color-white)'}}>{comment.body}</li>
+                <li style={{ color: 'var(--color-black)', backgroundColor: 'var(--color-white)', paddingBottom: '20px', textAlign: 'left', listStyle: 'none'}}>🌟 {comment.body}</li>
         )
     })
 
     return (
         <div className='question-form'>
-            <h1 style={{ color: 'var(--color-golden)'}}>{question.body}</h1>
+            <h1 style={{ color: 'var(--color-black)', backgroundColor: 'var(--color-white)', paddingBottom: '15px'}}>{question.body}</h1>
             <img src={question.image}/>
-            <div>Comments: {mappedComments}</div>
-            <form onSubmit={handleSubmit}>
+            <div style={{ backgroundColor: 'var(--color-white)'}}>
+                <h3 style={{ backgroundColor: 'var(--color-white)', paddingBottom: '10px', paddingTop: '10px'}}>Responses:</h3>
+                {mappedComments}</div>
+            <form style={{ backgroundColor: 'var(--color-white)'}} onSubmit={handleSubmit}>
                 <input
                     name='comment'
                     placeholder='Give an Answer'
                     onChange={handleChange}
                     required
+                    style={{ backgroundColor: 'var(--color-white)', width: '335px', height: '26px'}}
                 />
                 <br></br>
-                <button style={{ cursor: 'pointer' }}>Answer</button>
+                <button style={{ cursor: 'pointer', backgroundColor: 'var(--color-golden)', marginTop: '10px', padding: '5px', borderRadius: '14%' }}>Answer</button>
             </form>
         </div>
     )

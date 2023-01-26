@@ -1,9 +1,22 @@
 .question-form {
     text-align: center;
-    background-color: var(--color-black);
+    max-width: 400px;
+    padding-top: 14px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: auto;
+    margin-top: 16px;
+    border-radius: 5px;
+    background-color: var(--color-white);
 }
 
 .question-form img {
     border: 2px solid var(--color-golden);
-    max-width: 400px;
+    max-width: 340px;
+  text-align: center;
+}
+
+* {
+    background-color: var(--color-black);
 }
