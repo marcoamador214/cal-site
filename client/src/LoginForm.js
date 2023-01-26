@@ -39,7 +39,7 @@ const LoginForm = ({onLogin}) => {
         placeholder='Username'
         value={username}
         onChange={(event) => setUsername(event.target.value)}
-        style={{ marginBottom: '15px'}}
+        style={{ marginBottom: '15px', backgroundColor: 'var(--color-white)'}}
       />
       <br />
       <input
@@ -48,10 +48,10 @@ const LoginForm = ({onLogin}) => {
         placeholder='Password'
         value={password}
         onChange={(event) => setPassword(event.target.value)}
-        style={{ marginBottom: '15px'}}
+        style={{ marginBottom: '15px',  backgroundColor: 'var(--color-white)'}}
       />
       <br />
-      {error && <p>{error}</p>}
+      {error && <p style={{ color: 'var(--color-white)' }}>{error}</p>}
       <button type="submit" className='login-button'>Login</button>
     </form>
   );

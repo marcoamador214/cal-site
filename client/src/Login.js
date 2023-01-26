@@ -15,7 +15,7 @@ function Login({ onLogin }) {
         <div className="form">
           <LoginForm onLogin={onLogin} />
           <div style={{ textAlign: 'center'}}>
-            <p style={{ fontStyle: 'italic', marginTop: '10px', marginBottom: '10px'}}>Don't have an account?</p>
+            <p style={{ fontStyle: 'italic', marginTop: '10px', marginBottom: '10px', color: 'var(--color-white)'}}>Don't have an account?</p>
             <button onClick={() => setShowLogin(false)} className='sign-up-button'>Sign Up</button>
           </div>
           

@@ -29,11 +29,11 @@ function Intro() {
         loop
         controls={false}
         />
-        <div className='app__video-overlay flex__center'>
+        <div className='app__video-overlay flex__center' >
           <div className='app__video-overlay_circle flex__center' onClick={handleClick}>
             { playVideo ? (
-              <BsPauseFill color='#fff' fontSize={30}/>
-            ) : <BsFillPlayFill color='#fff' fontSize={30}/>}
+              <BsPauseFill color='#fff' backgroundColor= 'rgba(255, 255, 255, 0)' fontSize={30} style={{ backgroundColor: '#0000'}}/>
+            ) : <BsFillPlayFill color='#fff' fontSize={30} style={{ backgroundColor: '#0000'}}/>}
           </div>
         </div>
     </div>

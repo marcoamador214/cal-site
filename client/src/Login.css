@@ -37,6 +37,7 @@
     border-radius: 4px;
     padding: 5px;
     margin-top: 10px;
+    background-color: var(--color-golden);
   }
 
   .logo {
