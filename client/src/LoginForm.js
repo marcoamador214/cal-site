@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import images from './constants/images';
 
 const LoginForm = ({onLogin}) => {
   const [username, setUsername] = useState('');
@@ -29,13 +30,16 @@ const LoginForm = ({onLogin}) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className='login-form'>
+    <form onSubmit={handleSubmit} className='login-form' style={{ paddingTop: '250px'}}>
+      <img src={images.CalbearsFball} style={{ borderRadius: '50%', maxWidth: '95px', marginBottom: '10px'}}/>
+      <br></br>
       <input
         type="text"
         id="username"
         placeholder='Username'
         value={username}
         onChange={(event) => setUsername(event.target.value)}
+        style={{ marginBottom: '15px'}}
       />
       <br />
       <input
@@ -44,6 +48,7 @@ const LoginForm = ({onLogin}) => {
         placeholder='Password'
         value={password}
         onChange={(event) => setPassword(event.target.value)}
+        style={{ marginBottom: '15px'}}
       />
       <br />
       {error && <p>{error}</p>}

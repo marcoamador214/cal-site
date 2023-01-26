@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import LoginForm from "./LoginForm";
 import Create from "./Create"
+import './Login.css'
 // import {Button} from "./styles/Button"
 
 
@@ -10,15 +11,15 @@ function Login({ onLogin }) {
 
   return (
   <>
-    <h1 className='log-in-title'>CalBearsFball</h1>
       {showLogin ? (
-        <>
+        <div className="form">
           <LoginForm onLogin={onLogin} />
           <div style={{ textAlign: 'center'}}>
-            <p style={{ fontStyle: 'italic'}}>Don't have an account?</p>
+            <p style={{ fontStyle: 'italic', marginTop: '10px', marginBottom: '10px'}}>Don't have an account?</p>
             <button onClick={() => setShowLogin(false)} className='sign-up-button'>Sign Up</button>
           </div>
-  </>
+          
+  </div>
       ) : (
         <>
           <Create onLogin={onLogin} />
