@@ -46,4 +46,12 @@
     max-width: 100px;
   }
 
+  .back-to-login-button {
+    background-color: var(--color-golden);
+    margin-top: 15px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10%;
+  }
+
 

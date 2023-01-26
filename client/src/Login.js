@@ -24,7 +24,7 @@ function Login({ onLogin }) {
         <>
           <Create onLogin={onLogin} />
           <div style={{ textAlign: 'center'}}>
-            <p style={{ textAlign: 'center', fontStyle: 'italic'}}>Already have an account?</p>
+            <p style={{ textAlign: 'center', fontStyle: 'italic', color: 'var(--color-white)'}}>Already have an account?</p>
             <button onClick={() => setShowLogin(true)} className='back-to-login-button'>Back to Login</button>
           </div>
         </>

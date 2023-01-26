@@ -1,4 +1,5 @@
 import React,{ useState } from "react";
+import './Create.css'
 // import App from "./App.js"
 
 function Create ({ onLogin }) {
